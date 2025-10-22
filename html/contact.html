@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجري الجديد - اتصل بنا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+       <link rel="stylesheet" href="../css/contact.css">
+
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">
+            <i class="fas fa-store"></i>
+            <span>متجري الجديد</span>
+        </a>
+        
+        <div class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>تواصل معنا</h1>
+        <p>نحن هنا للإجابة على جميع استفساراتك ومساعدتك في أي وقت</p>
+    </header>
+
+    <main>
+        <div class="success-message" id="successMessage">
+            <p><i class="fas fa-check-circle"></i> تم إرسال رسالتك بنجاح، سنتواصل معك قريباً!</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2 class="section-title" style="text-align: right; margin-bottom: 1.5rem;"><i class="fas fa-paper-plane"></i> أرسل رسالة</h2>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">موضوع الرسالة</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>اختر موضوع الرسالة</option>
+                            <option value="inquiry">استفسار عام</option>
+                            <option value="order">استفسار عن طلب</option>
+                            <option value="product">استفسار عن منتج</option>
+                            <option value="complaint">شكوى</option>
+                            <option value="suggestion">اقتراح</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" required placeholder="أدخل رسالتك هنا..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> إرسال الرسالة</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2 class="section-title" style="text-align: right; margin-bottom: 1.5rem;"><i class="fas fa-info-circle"></i> معلومات التواصل</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>العنوان</h3>
+                        <p>123 شارع التجارة، القاهرة، مصر</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>الهاتف</h3>
+                        <p><a href="tel:+20123456789">+20 123 456 789</a></p>
+                        <p><a href="tel:+20987654321">+20 987 654 321</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>البريد الإلكتروني</h3>
+                        <p><a href="mailto:info@mynewshop.com">info@mynewshop.com</a></p>
+                        <p><a href="mailto:support@mynewshop.com">support@mynewshop.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>ساعات العمل</h3>
+                        <p>من الأحد إلى الخميس: 9 صباحاً - 10 مساءً</p>
+                        <p>الجمعة والسبت: 10 صباحاً - 12 منتصف الليل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.679215901936!2d31.2359493151155!3d30.04455798188314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458409a8f5e5b1f%3A0x3f8a0d4b4e5e5b1f!2s123%20Trade%20St%2C%20Cairo%2C%20Egypt!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        
+        <div class="hours-container">
+            <h2 class="section-title" style="text-align: right; margin-bottom: 1.5rem;"><i class="fas fa-calendar-alt"></i> ساعات العمل</h2>
+            
+            <ul class="hours-list">
+                <li>
+                    <span class="day">الأحد - الخميس</span>
+                    <span class="time">9:00 صباحاً - 10:00 مساءً</span>
+                </li>
+                <li>
+                    <span class="day">الجمعة</span>
+                    <span class="time">10:00 صباحاً - 12:00 منتصف الليل</span>
+                </li>
+                <li>
+                    <span class="day">السبت</span>
+                    <span class="time">10:00 صباحاً - 12:00 منتصف الليل</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>عن المتجر</h3>
+                <p>متجري الجديد هو وجهتك الأولى للتسوق الإلكتروني الآمن والسريع، نقدم أفضل المنتجات بأفضل الأسعار.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/i/flow/signup"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>روابط سريعة</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> سياسة الخصوصية</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> الشروط والأحكام</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>خدمة العملاء</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> الأسئلة الشائعة</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> طرق الدفع</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> سياسة الإرجاع</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> تتبع الطلب</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i> الدعم الفني</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>اتصل بنا</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 شارع التجارة، القاهرة، مصر</a></li>
+                    <li><a href="tel:+20123456789"><i class="fas fa-phone-alt"></i> +20 123 456 789</a></li>
+                    <li><a href="mailto:info@mynewshop.com"><i class="fas fa-envelope"></i> info@mynewshop.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> يومياً من 9 صباحاً إلى 11 مساءً</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 متجري الجديد. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
